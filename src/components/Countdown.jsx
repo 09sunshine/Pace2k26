@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const COUNTDOWN_TARGET = new Date("2025-02-28T23:59:59");
+const COUNTDOWN_TARGET = new Date("2026-02-26T23:59:59");
 
 const getTimeLeft = () => {
   const totalTimeLeft = COUNTDOWN_TARGET - new Date();
@@ -26,7 +26,8 @@ const Countdown = () => {
 
   return (
     <div className="font-[Genos] bg-black flex flex-col  hero5-container justify-center items-center">
-      <h2 className="text-white text-4xl font-bold mb-6">Pace 2K25</h2>
+      <h2 className="text-white text-4xl font-bold mb-6">Pace 2K26</h2>
+      <h2 className="text-white text-5xl font-bold mb-6">26 February 2026</h2>
       <div className="flex justify-center items-center gap-6 bg-black border-2 border-blue-200 bg-opacity-30 backdrop-blur-md rounded-lg p-8 shadow-lg">
         <div className="flex flex-col items-center text-white">
           <div className="text-6xl font-bold">{timeLeft.days} :</div>

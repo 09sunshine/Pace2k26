@@ -61,7 +61,7 @@ const About = () => {
 
         <div className="grid md:grid-cols-2 gap-10">
           <div
-            className={`text-lg leading-relaxed font-[Genos] transition-transform duration-1000 ease-in-out`}
+            className={`text-lg leading-relaxed  transition-transform duration-1000 ease-in-out`}
           >
             <p>
               The annual sports fest of{" "}

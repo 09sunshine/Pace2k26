@@ -49,7 +49,7 @@ const Sponsors = () => {
             key={index}
             initial={{ opacity: 0, scale: 0.8 }}
             animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
-            transition={{ duration: 0.8, delay: index * 0.2, ease: "easeInOut" }}
+            transition={{ duration: 0.3, delay: index * 0.2, ease: "easeInOut" }}
             className="relative w-full flex flex-col items-center rounded-xl shadow-md bg-gray-900"
           >
             <div className="w-full h-32 sm:h-40 bg-black flex justify-center items-center rounded-t-xl overflow-hidden">

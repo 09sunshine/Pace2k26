@@ -1,10 +1,13 @@
-import React from "react";
+
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Sponsors from "../components/Sponsor";
-import SponsorForm from "../components/SponsorForm";
+import SponsorSection from "../components/SponsorSection";
 import EventSlider from "../components/EventSlider";
 import Countdown from "../components/Countdown";
+import TeamSection from "../components/TeamSection";
+import Gallery from "../components/Gallery"
+
 
 const Home = () => {
   return (
@@ -22,10 +25,16 @@ const Home = () => {
         <EventSlider />
       </div>
       <div className="mb-25">
+        <TeamSection />
+      </div>
+      <div className="mb-25">
         <Sponsors />
       </div>
+      <div>
+        <Gallery />
+      </div>
       <div className="mb-16">
-        <SponsorForm />
+        <SponsorSection />
       </div>
     </>
   );
