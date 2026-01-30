@@ -224,6 +224,11 @@ const teams = {
       role: "Joint Secretary",
       image: "../src/assets/SE-shivansh.jpeg",
       instagram: "https://www.instagram.com/shivanshhh_28?igsh=MTVwYW80YmJieWFicg==",
+    },{
+      name: "Tanu",
+      role: "Joint Secretary",
+      image: "../src/assets/SE-tanu.jpeg",
+      instagram: "#",
     },
     // add ~9 more...
   ],
