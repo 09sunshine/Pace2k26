@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import cricket from "../assets/cricket.png";
 import football from "../assets/football.png";
-import logo from "../assets/paceLogo.png";
+import logo from "../assets/bg1.png";
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);

@@ -129,7 +129,7 @@ export default function Gallery() {
 
  
   return (
-    <div className="dark bg-black min-h-screen flex items-center justify-center px-4">
+    <div id="gallery-section" className="dark bg-black min-h-screen flex items-center justify-center px-4">
       <div className="w-full max-w-6xl">
 
         {/* MAIN IMAGE */}

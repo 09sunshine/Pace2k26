@@ -27,8 +27,11 @@ const MobileNavbar = ({ isMobileOpen, setIsMobileOpen }) => {
       >
         Rulebook
       </a>
-      <a href="#" className="text-lg text-white hover:text-gray-300">
+      <a href="/team" className="text-lg text-white hover:text-gray-300">
         Team
+      </a>
+      <a href="/gallery" className="text-lg text-white hover:text-gray-300">
+        Gallery
       </a>
       <a
         href="https://linktr.ee/PACE2K25"

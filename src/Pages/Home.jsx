@@ -1,12 +1,12 @@
 
 import Hero from "../components/Hero";
-import About from "../components/About";
-import Sponsors from "../components/Sponsor";
+import SponsorWall from "../components/SponsorWall";
 import SponsorSection from "../components/SponsorSection";
 import EventSlider from "../components/EventSlider";
 import Countdown from "../components/Countdown";
 import TeamSection from "../components/TeamSection";
 import Gallery from "../components/Gallery"
+import AboutUs from "../components/AboutUs";
 
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
         <Hero />
       </div>
       <div className="mb-25">
-        <About />
+        <AboutUs />
       </div>
       <div className="mb-25">
         <Countdown />
@@ -28,7 +28,7 @@ const Home = () => {
         <TeamSection />
       </div>
       <div className="mb-25">
-        <Sponsors />
+        <SponsorWall />
       </div>
       <div>
         <Gallery />

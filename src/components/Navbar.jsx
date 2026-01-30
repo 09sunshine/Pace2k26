@@ -4,6 +4,8 @@ import { Menu, X } from "lucide-react"; // Icons
 import MobileNavbar from "./MobileNavbar"; 
 import brochure from "../assets/pace2025brochure.pdf"
 import pace from "../assets/PACE 2025 RULEBOOK.pdf"
+import TeamSection from "./TeamSection";
+import Gallery from "./Gallery";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -19,15 +21,29 @@ const Navbar = () => {
       aboutSection.scrollIntoView({ behavior: "smooth" });
     }
   };
+  const handleScrollToGallery = () => {
+    const gallerySection = document.getElementById("gallery-section");
+    if (gallerySection) {
+      gallerySection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const handleScrollToTeam = () => {
+    const teamSection = document.getElementById("team-section");
+    if (teamSection) {
+      teamSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className="bg-black w-full hero7-container relative">
       <div className="container mx-auto py-5 px-4">
         {/* Desktop Navbar */}
         <nav className="flex items-center justify-between flex-col lg:flex-row">
+          <a href="/">
           <h1 className="text-2xl font-bold font-[Genos] text-white cursor-pointer mb-4 lg:mb-0">
             AIT SPORTS CLUB
           </h1>
+          </a>
 
           {/* Desktop Navigation Links */}
           <div className="hidden lg:flex items-center gap-8">
@@ -37,7 +53,13 @@ const Navbar = () => {
          <a href={pace} className="text-lg font-[Genos] text-white hover:text-gray-300" download>
                    Rulebook
                  </a>
-            <span className="text-white">|</span>
+                 <a href="#" onClick={handleScrollToTeam} className="text-lg font-[Genos] text-white hover:text-gray-300 hover:cursor-pointer" >
+                   Team
+                 </a>
+                 <a href="#" onClick={handleScrollToGallery} className="text-lg font-[Genos] text-white hover:text-gray-300 hover:cursor-pointer" >
+                   Gallery
+                 </a>
+            
             <a href="#" className="text-xl font-[Genos] text-white hover:text-gray-300" onClick={handleScrollToAbout}>
               About
             </a>
