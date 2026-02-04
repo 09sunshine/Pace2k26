@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Instagram } from "lucide-react";
+import te1 from "../assets/TE-shivani.jpeg";
+import te2 from "../assets/TE-pandu.jpeg";
+import te3 from "../assets/TE-me2.jpeg";
 
 /* ---------------- TEAM DATA ---------------- */
 
@@ -9,7 +12,7 @@ const teams = {
     {
       name: "Shivani Dogra",
       role: "Secretary",
-      image: "../src/assets/TE-shivani.jpeg",
+      image: te1,
       instagram: "https://www.instagram.com/__shivani.8888?igsh=MXJrcHhrdWl5YjZ6dw==",
     },
     {
