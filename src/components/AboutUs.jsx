@@ -1,14 +1,15 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const images = [
-  "../src/assets/abt1.jpeg",
-  "../src/assets/abt2.jpeg",
-  "../src/assets/abt3.jpeg",
-  "../src/assets/abt4.jpeg",
-  "../src/assets/diro1.jpg",
-  "../src/assets/img45.jpg",
-];
+import abt1 from "../assets/abt1.jpeg";
+import abt2 from "../assets/abt2.jpeg";
+import abt3 from "../assets/abt3.jpeg";
+import abt4 from "../assets/abt4.jpeg";
+import diro1 from "../assets/diro1.jpg";
+import img45 from "../assets/img45.jpg";
+
+const images = [abt1, abt2, abt3, abt4, diro1, img45];
+
 
 export default function AboutUs() {
   const [current, setCurrent] = useState(0);

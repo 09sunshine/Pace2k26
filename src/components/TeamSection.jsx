@@ -1,359 +1,137 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Instagram } from "lucide-react";
+/* ================= TE IMAGES ================= */
 import te1 from "../assets/TE-shivani.jpeg";
 import te2 from "../assets/TE-pandu.jpeg";
 import te3 from "../assets/TE-me2.jpeg";
+import te4 from "../assets/TE-mahala.jpeg";
+import te5 from "../assets/TE-piyush.jpeg";
+import te6 from "../assets/TE-keshuu.jpeg";
+import te7 from "../assets/TE-ayush.jpeg";
+import te8 from "../assets/TE-rahul.jpeg";
+import te9 from "../assets/TE-shivang1.jpeg";
+import te10 from "../assets/TE-kuldeep.png";
+import te11 from "../assets/TE-lalit.jpeg";
+import te12 from "../assets/TE-param.jpeg";
+import te13 from "../assets/TE-divyanshi.jpeg";
+import te14 from "../assets/TE-akash.jpeg";
+
+/* ================= FACULTY ================= */
+import fac1 from "../assets/FAC-pd.jpeg";
+import fac2 from "../assets/FAC-ash.jpeg";
+import fac3 from "../assets/FAC-swati.jpeg";
+
+/* ================= SE IMAGES ================= */
+import se1 from "../assets/SE-himanshu.jpeg";
+import se2 from "../assets/SE-sagar.jpeg";
+import se3 from "../assets/SE-yogesh.jpeg";
+import se4 from "../assets/SE-ritika.jpeg";
+import se5 from "../assets/SE-mah.jpeg";
+import se6 from "../assets/SE-shomya.jpeg";
+import se7 from "../assets/SE-lokesh.jpeg";
+import se8 from "../assets/SE-ayesha.png";
+import se9 from "../assets/SE-siddhi.png";
+import se10 from "../assets/SE-navdeep.png";
+import se11 from "../assets/SE-puneet.png";
+import se12 from "../assets/SE-manjeet.jpeg";
+import se13 from "../assets/SE-rahul.jpeg";
+import se14 from "../assets/SE-rohan.jpeg";
+import se15 from "../assets/SE-lakshya.jpeg";
+import se16 from "../assets/SE-anagha.png";
+import se17 from "../assets/SE-akash.png";
+import se18 from "../assets/SE-shivansh.jpeg";
+import se19 from "../assets/SE-tanu.jpeg";
+
+/* ================= EVENT HEADS ================= */
+import eh1 from "../assets/EH-akash.jpeg";
+import eh2 from "../assets/EH-millan.jpeg";
+import eh3 from "../assets/EH-ajay.jpeg";
+import eh4 from "../assets/EH-ritika.jpeg";
+import eh5 from "../assets/EH-shivani.jpeg";
+import eh6 from "../assets/EH-sunandha.jpeg";
+import eh7 from "../assets/EH-manish.jpeg";
+import eh8 from "../assets/EH-laxmi.jpeg";
+import eh9 from "../assets/EH-mohitk.jpeg";
+import eh10 from "../assets/EH-shweta.jpeg";
+import eh11 from "../assets/EH-mohit.jpeg";
+import eh12 from "../assets/EH-daksh.jpeg";
+import eh13 from "../assets/EH-sonali.jpeg";
+import eh14 from "../assets/EH-akashtt.jpeg";
+import eh15 from "../assets/EH-pooja.jpeg";
+import eh16 from "../assets/EH-rayan.jpeg";
+import eh17 from "../assets/EH-kajal.jpeg";
+import eh18 from "../assets/EH-anirudh.jpeg";
 
 /* ---------------- TEAM DATA ---------------- */
 
 const teams = {
-
   te: [
-    {
-      name: "Shivani Dogra",
-      role: "Secretary",
-      image: te1,
-      instagram: "https://www.instagram.com/__shivani.8888?igsh=MXJrcHhrdWl5YjZ6dw==",
-    },
-    {
-      name: "Dheeraj Pandey",
-      role: "Secretary",
-      image: "../src/assets/TE-pandu.jpeg",
-      instagram: "https://www.instagram.com/dheerajpandey5513?igsh=MTU3Z3hpNnkwZ2dmMg==",
-    },
-    {
-      name: "Sanshey",
-      role: "Technical Head",
-      image: "../src/assets/TE-me2.jpeg",
-      instagram: "https://www.instagram.com/09_s.unshine?igsh=cG42a3o0cmg0dWJq",
-    },
-    {
-      name: "Aditya Mahala",
-      role: "Technical Head",
-      image: "../src/assets/TE-mahala.jpeg",
-      instagram: "https://www.instagram.com/viper_2324?igsh=dGx5cWN5b3gycGFq",
-    },
-    {
-      name: "Piyush Kumar",
-      role: "Management Head",
-      image: "../src/assets/TE-piyush.jpeg",
-      instagram: "https://www.instagram.com/piyushkumar__7?igsh=MXAxazh5aDNlaHd0Zg==",
-    },
-    {
-      name: "Keshav Dangi",
-      role: "Social Media Head",
-      image: "../src/assets/TE-keshuu.jpeg",
-      instagram: "https://www.instagram.com/keshavv_choudhary12?igsh=cHRzM2ZoM3Rtdmhr",
-    },
-    {
-      name: "Ayush Bajetha",
-      role: "Social Media Head",
-      image: "../src/assets/TE-ayush.jpeg",
-      instagram: "https://www.instagram.com/ayush_bajetha?igsh=bXk2dXB4ZzBlN2U1",
-    },
-    {
-      name: "Rahul Triphati",
-      role: "Technical Head",
-      image: "../src/assets/TE-rahul.jpeg",
-      instagram: "https://www.instagram.com/_rahul2k4?igsh=MWRmbXQ3aXM2ZXEydA==",
-    },
-    {
-      name: "Shivang",
-      role: "Sponsorship Head",
-      image: "../src/assets/TE-shivang1.jpeg",
-      instagram: "https://www.instagram.com/shiv_xng22?igsh=MXYxdnZ0ZXQ4OHFpeA==",
-    },
-    {
-      name: "Kuldeep Bishnoi",
-      role: "Designing Head",
-      image: "../src/assets/TE-kuldeep.png",
-      instagram: "https://www.instagram.com/_rk_15_03?igsh=MWFwbmRoZ2V3cG1zMA==",
-    },
-    {
-      name: "Lalit Makhan Singh",
-      role: "Registration Head",
-      image: "../src/assets/TE-lalit.jpeg",
-      instagram: "https://www.instagram.com/lalitsingh2004?igsh=bHo1OW03bTRqOGR6",
-    },
-    {
-      name: "Paramjeet Singh",
-      role: "Treasurer",
-      image: "../src/assets/TE-param.jpeg",
-      instagram: "https://www.instagram.com/paramjeet.20?igsh=MWg0MG5sbm92eTZnbg==",
-    },
-    {
-      name: "Divyanshi",
-      role: "Management Head",
-      image: "../src/assets/TE-divyanshi.jpeg",
-      instagram: "https://www.instagram.com/_diva_.314?igsh=bXJ4MWJ3Yms2ZGU=",
-    },
-    {
-      name: "Aakash",
-      role: "PR head",
-      image: "../src/assets/TE-akash.jpeg",
-      instagram: "https://www.instagram.com/aakashxyadav_?igsh=dHJrdTJld283N3p2",
-    },
-    
-    // add 5 more...
+    { name: "Shivani Dogra", role: "Secretary", image: te1, instagram: "https://www.instagram.com/__shivani.8888" },
+    { name: "Dheeraj Pandey", role: "Secretary", image: te2, instagram: "https://www.instagram.com/dheerajpandey5513" },
+    { name: "Sanshey", role: "Technical Head", image: te3, instagram: "https://www.instagram.com/09_s.unshine" },
+    { name: "Aditya Mahala", role: "Technical Head", image: te4, instagram: "https://www.instagram.com/viper_2324" },
+    { name: "Piyush Kumar", role: "Management Head", image: te5, instagram: "https://www.instagram.com/piyushkumar__7" },
+    { name: "Keshav Dangi", role: "Social Media Head", image: te6, instagram: "https://www.instagram.com/keshavv_choudhary12" },
+    { name: "Ayush Bajetha", role: "Social Media Head", image: te7, instagram: "https://www.instagram.com/ayush_bajetha" },
+    { name: "Rahul Tripathi", role: "Technical Head", image: te8, instagram: "https://www.instagram.com/_rahul2k4" },
+    { name: "Shivang", role: "Sponsorship Head", image: te9, instagram: "https://www.instagram.com/shiv_xng22" },
+    { name: "Kuldeep Bishnoi", role: "Designing Head", image: te10, instagram: "https://www.instagram.com/_rk_15_03" },
+    { name: "Lalit Singh", role: "Registration Head", image: te11, instagram: "https://www.instagram.com/lalitsingh2004" },
+    { name: "Paramjeet Singh", role: "Treasurer", image: te12, instagram: "https://www.instagram.com/paramjeet.20" },
+    { name: "Divyanshi", role: "Management Head", image: te13, instagram: "https://www.instagram.com/_diva_.314" },
+    { name: "Aakash", role: "PR Head", image: te14, instagram: "https://www.instagram.com/aakashxyadav_" },
   ],
 
   faculty: [
-    {
-      name: "Mr. Vishal Pardeshi",
-      role: "Physical Director",
-      image: "../src/assets/FAC-pd.jpeg",
-      instagram: "#",
-    },
-    {
-      name: "Prof. Asha P Sathe",
-      role: "Faculty Incharge",
-      image: "../src/assets/FAC-ash.jpeg",
-      instagram: "#",
-    },
-    {
-      name: "Mrs. Swati Salunkhe",
-      role: "Faculty Member",
-      image: "../src/assets/FAC-swati.jpeg",
-      instagram: "#",
-    },
+    { name: "Mr. Vishal Pardeshi", role: "Physical Director", image: fac1 },
+    { name: "Prof. Asha Sathe", role: "Faculty Incharge", image: fac2 },
+    { name: "Mrs. Swati Salunkhe", role: "Faculty Member", image: fac3 },
   ],
 
   se: [
-    {
-      name: "Himanshu",
-      role: "Joint Secretary",
-      image: "../src/assets/SE-himanshu.jpeg",
-      instagram: "https://www.instagram.com/himanshu_r27?igsh=MTNjN3F2djFhZnFudQ==",
-    },
-    {
-      name: "Sagar",
-      role: "Joint Secretary",
-      image: "../src/assets/SE-sagar.jpeg",
-      instagram: "https://www.instagram.com/sagar_d_2803?igsh=djNnb2luZnprbDNq",
-    },
-    {
-      name: "Yogesh",
-      role: "Joint Secretary",
-      image: "../src/assets/SE-yogesh.jpeg",
-      instagram: "https://www.instagram.com/jakhar_37?igsh=YTg1NW5mdnc5MXll",
-    },
-    {
-      name: "Ritika",
-      role: "Joint Secretary",
-      image: "../src/assets/SE-ritika.jpeg",
-      instagram: "https://www.instagram.com/ritikagautam375?igsh=a3p5ZjJqNjh3ZTA4",
-    },
-    {
-      name: "Mahinder",
-      role: "Joint Secretary",
-      image: "../src/assets/SE-mah.jpeg",
-      instagram: "https://www.instagram.com/jani_the0036?igsh=MW90dGpsaGpkYmRkYg==",
-    },
-    {
-      name: "Shomya",
-      role: "Joint Secretary",
-      image: "../src/assets/SE-shomya.jpeg",
-      instagram: "https://www.instagram.com/ranjan.shomya/",
-    },
-    {
-      name: "Lokesh",
-      role: "Joint Secretary",
-      image: "../src/assets/SE-lokesh.jpeg",
-      instagram: "https://www.instagram.com/_lokesh_vats?utm_source=qr&igsh=MWFzeXVpMG4zcGEyZQ==",
-    },
-    {
-      name: "Aysha",
-      role: "Joint Secretary",
-      image: "../src/assets/SE-ayesha.png",
-      instagram: "https://www.instagram.com/ayshabisht_12?utm_source=qr&igsh=MWs4bHhpcW00eTByeA==",
-    },
-    {
-      name: "Sidhi",
-      role: "Joint Secretary",
-      image: "../src/assets/SE-siddhi.png",
-      instagram: "https://www.instagram.com/_.siddhiii06?igsh=Nmg0Y2Y4dWh0cGtn&utm_source=qr",
-    },
-    {
-      name: "Navdeep",
-      role: "Joint Secretary",
-      image: "../src/assets/SE-navdeep.png",
-      instagram: "https://www.instagram.com/_bynv_/",
-    },
-    {
-      name: "Punit",
-      role: "Joint Secretary",
-      image: "../src/assets/SE-puneet.png",
-      instagram: "https://www.instagram.com/punit_phogat16?igsh=MTA3OHNjZm93bWF5OA==",
-    },
-    
-    {
-      name: "Manjeet",
-      role: "Joint Secretary",
-      image: "../src/assets/SE-manjeet.jpeg",
-      instagram: "https://www.instagram.com/manusingh090?utm_source=qr&igsh=MWxqNmE4cW8yZ2NnbQ==",
-    },
-    {
-      name: "Rahul",
-      role: "Joint Secretary",
-      image: "../src/assets/SE-rahul.jpeg",
-      instagram: "https://www.instagram.com/r.ahul_0018?igsh=N2NmcDV1MW05dGk1",
-    },
-    {
-      name: "Rohan",
-      role: "Joint Secretary",
-      image: "../src/assets/SE-rohan.jpeg",
-      instagram: "https://www.instagram.com/rohanchoudhary21?igsh=c3l6YXRzcW95MDFy",
-    },
-    {
-      name: "Lakhshya ",
-      role: "Joint Secretary",
-      image: "../src/assets/SE-lakshya.jpeg",
-      instagram: "https://www.instagram.com/lakshya.y_?igsh=ejUxa3lidnlxNWdn",
-    },
-    {
-      name: "Anagha",
-      role: "Joint Secretary",
-      image: "../src/assets/SE-anagha.png",
-      instagram: "https://www.instagram.com/_a_nagha_._?utm_source=qr&igsh=ZWw4NW40M3Y0OWQ5",
-    },
-    {
-      name: "Akash",
-      role: "Joint Secretary",
-      image: "../src/assets/SE-akash.png",
-      instagram: "https://www.instagram.com",
-    },
-    {
-      name: "Shivansh",
-      role: "Joint Secretary",
-      image: "../src/assets/SE-shivansh.jpeg",
-      instagram: "https://www.instagram.com/shivanshhh_28?igsh=MTVwYW80YmJieWFicg==",
-    },{
-      name: "Tanu",
-      role: "Joint Secretary",
-      image: "../src/assets/SE-tanu.jpeg",
-      instagram: "#",
-    },
-    // add ~9 more...
-  ],
+  { name: "Himanshu", role: "Joint Secretary", image: se1, instagram: "https://www.instagram.com/himanshu_r27" },
+  { name: "Sagar", role: "Joint Secretary", image: se2, instagram: "https://www.instagram.com/sagar_d_2803" },
+  { name: "Yogesh", role: "Joint Secretary", image: se3, instagram: "https://www.instagram.com/jakhar_37" },
+  { name: "Ritika", role: "Joint Secretary", image: se4, instagram: "https://www.instagram.com/ritikagautam375" },
+  { name: "Mahinder", role: "Joint Secretary", image: se5, instagram: "https://www.instagram.com/jani_the0036" },
+  { name: "Shomya", role: "Joint Secretary", image: se6, instagram: "https://www.instagram.com/ranjan.shomya" },
+  { name: "Lokesh", role: "Joint Secretary", image: se7, instagram: "https://www.instagram.com/_lokesh_vats" },
+  { name: "Aysha", role: "Joint Secretary", image: se8, instagram: "https://www.instagram.com/ayshabisht_12" },
+  { name: "Sidhi", role: "Joint Secretary", image: se9, instagram: "https://www.instagram.com/_.siddhiii06" },
+  { name: "Navdeep", role: "Joint Secretary", image: se10, instagram: "https://www.instagram.com/_bynv_" },
+  { name: "Punit", role: "Joint Secretary", image: se11, instagram: "https://www.instagram.com/punit_phogat16" },
+  { name: "Manjeet", role: "Joint Secretary", image: se12, instagram: "https://www.instagram.com/manusingh090" },
+  { name: "Rahul", role: "Joint Secretary", image: se13, instagram: "https://www.instagram.com/r.ahul_0018" },
+  { name: "Rohan", role: "Joint Secretary", image: se14, instagram: "https://www.instagram.com/rohanchoudhary21" },
+  { name: "Lakshya", role: "Joint Secretary", image: se15, instagram: "https://www.instagram.com/lakshya.y_" },
+  { name: "Anagha", role: "Joint Secretary", image: se16, instagram: "https://www.instagram.com/_a_nagha_._" },
+  { name: "Akash", role: "Joint Secretary", image: se17, instagram: "https://www.instagram.com" },
+  { name: "Shivansh", role: "Joint Secretary", image: se18, instagram: "https://www.instagram.com/shivanshhh_28" },
+  { name: "Tanu", role: "Joint Secretary", image: se19, instagram: "#" },
+],
+
   event: [
-    {
-      name: "Akash Takhar",
-      role: "Kabaddi Head",
-      image: "../src/assets/EH-akash.jpeg",
-      instagram: "#",
-    },
-    {
-      name: "Millan Patra",
-      role: "Basketball Head",
-      image: "../src/assets/EH-millan.jpeg",
-      instagram: "#",
-    },
-    {
-      name: "Ajay",
-      role: "Basketball Head",
-      image: "../src/assets/EH-ajay.jpeg",
-      instagram: "#",
-    },
-    {
-      name: "Ritika",
-      role: "Squash Head",
-      image: "../src/assets/EH-ritika.jpeg",
-      instagram: "#",
-    },
-    {
-      name: "Shivang",
-      role: "Squash Head",
-      image: "../src/assets/TE-shivang1.jpeg",
-      instagram: "#",
-    },
-    {
-      name: "Sunandha",
-      role: "Football Head",
-      image: "../src/assets/EH-sunandha.jpeg",
-      instagram: "#",
-    },
-    {
-      name: "Manish",
-      role: "Football Head",
-      image: "../src/assets/EH-manish.jpeg",
-      instagram: "#",
-    },
-    {
-      name: "Laxmi",
-      role: "Volleyball Head",
-      image: "../src/assets/EH-laxmi.jpeg",
-      instagram: "#",
-    },
-    {
-      name: "Mohit",
-      role: "Volleyball Head",
-      image: "../src/assets/EH-mohitk.jpeg",
-      instagram: "#",
-    },
-    {
-      name: "Sweta",
-      role: "Cricket Head",
-      image: "../src/assets/EH-shweta.jpeg",
-      instagram: "#",
-    },
-    {
-      name: "Mohit",
-      role: "Cricket Head",
-      image: "../src/assets/EH-mohit.jpeg",
-      instagram: "#",
-    },
-    {
-      name: "Shivani",
-      role: "Badminton Head",
-      image: "../src/assets/EH-shivani.jpeg",
-      instagram: "#",
-    },
-    {
-      name: "Daksh",
-      role: "Badminton Head",
-      image: "../src/assets/EH-daksh.jpeg",
-      instagram: "#",
-    },
-    {
-      name: "Sonali",
-      role: "Table Tennis Head",
-      image: "../src/assets/EH-sonali.jpeg",
-      instagram: "#",
-    },
-    {
-      name: "Akash",
-      role: "Table Tennis Head",
-      image: "../src/assets/EH-akashtt.jpeg",
-      instagram: "#",
-    },
-    {
-      name: "Pooja",
-      role: "Lawn Tennis Head",
-      image: "../src/assets/EH-pooja.jpeg",
-      instagram: "#",
-    },
-    {
-      name: "Rayan",
-      role: "Lawn Tennis Head",
-      image: "../src/assets/EH-rayan.jpeg",
-      instagram: "#",
-    },
-    {
-      name: "Kajal",
-      role: "Chess Head",
-      image: "../src/assets/EH-kajal.jpeg",
-      instagram: "#",
-    },
-    {
-      name: "Anirudh",
-      role: "Chess Head",
-      image: "../src/assets/EH-anirudh.jpeg",
-      instagram: "#",
-    },
-    
-    // add ~9 more...
+    { name: "Akash", role: "Kabaddi Head", image: eh1 },
+    { name: "Millan", role: "Basketball Head", image: eh2 },
+    { name: "Ajay", role: "Basketball Head", image: eh3 },
+    { name: "Ritika", role: "Squash Head", image: eh4 },
+    { name: "Shivani", role: "Badminton Head", image: eh5 },
+    { name: "Sunandha", role: "Football Head", image: eh6 },
+    { name: "Manish", role: "Football Head", image: eh7 },
+    { name: "Laxmi", role: "Volleyball Head", image: eh8 },
+    { name: "Mohit", role: "Volleyball Head", image: eh9 },
+    { name: "Sweta", role: "Cricket Head", image: eh10 },
+    { name: "Mohit", role: "Cricket Head", image: eh11 },
+    { name: "Daksh", role: "Badminton Head", image: eh12 },
+    { name: "Sonali", role: "Table Tennis Head", image: eh13 },
+    { name: "Akash", role: "Table Tennis Head", image: eh14 },
+    { name: "Pooja", role: "Lawn Tennis Head", image: eh15 },
+    { name: "Rayan", role: "Lawn Tennis Head", image: eh16 },
+    { name: "Kajal", role: "Chess Head", image: eh17 },
+    { name: "Anirudh", role: "Chess Head", image: eh18 },
   ],
 };
+
 
 /* ---------------- COMPONENT ---------------- */
 
