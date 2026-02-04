@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Home from "./Pages/Home";
 import Register from "./Pages/Register";
 import OurTeam from "./Pages/OurTeam";
- import "./App.css";
+import "./App.css";
 import TeamSection from "./components/TeamSection";
 import Gallery from "./components/Gallery";
 

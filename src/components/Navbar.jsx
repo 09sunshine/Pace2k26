@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react"; // Icons
 import MobileNavbar from "./MobileNavbar"; 
-import brochure from "../assets/pace2025brochure.pdf"
-import pace from "../assets/PACE 2025 RULEBOOK.pdf"
+import brochure from "../assets/brochure.pdf"
+import pace from "../assets/rulebook.pdf"
 import TeamSection from "./TeamSection";
 import Gallery from "./Gallery";
 
@@ -64,7 +64,7 @@ const Navbar = () => {
               About
             </a>
 
-            <a href="https://linktr.ee/PACE2K25" className="text-xl font-[Genos] text-white hover:text-gray-300">
+            <a href="https://linktr.ee/pace2026" className="text-xl font-[Genos] text-white hover:text-gray-300">
               Contact Us
             </a>
           </div>
@@ -72,7 +72,7 @@ const Navbar = () => {
           {/* Desktop Register Button */}
           <div className="hidden lg:flex">
   <a
-    href="https://unstop.com/college-fests/pace-2025-army-institute-of-technology-ait-pune-328040"
+    href="https://www.crwdctrl.in/view-details/6979fc94bb929ade8f0b8ea9 "
     target="_blank"
     rel="noopener noreferrer"
     className="px-4 py-2 text-sm font-[Genos] border-2 rounded-lg border-white text-white hover:bg-white hover:text-black"

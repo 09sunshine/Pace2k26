@@ -13,7 +13,7 @@ import badminton from "../assets/badminton.png";
 import chess from "../assets/chess.png";
 import kabaddi from "../assets/kabaddi.png";
 import cricket from "../assets/cricket2.png";
-import pace from "../assets/PACE 2025 RULEBOOK.pdf";
+import pace from "../assets/rulebook.pdf";
 import volleyballRulebook from "../assets/Volleyball.pdf";
 import footballRulebook from "../assets/Football.pdf";
 import basketballRulebook from "../assets/Basketball.pdf";

@@ -64,7 +64,7 @@ const Hero = () => {
 
           <button className="relative mt-3 text-xl font-semibold px-16 py-4 rounded-full text-white bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 transition duration-300 ease-in-out shadow-lg hover:shadow-xl transform hover:scale-105">
             <a
-              href="https://unstop.com/college-fests/pace-2025-army-institute-of-technology-ait-pune-328040"
+              href="https://www.crwdctrl.in/view-details/6979fc94bb929ade8f0b8ea9"
               target="_blank"
               rel="noopener noreferrer"
             >

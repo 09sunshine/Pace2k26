@@ -1,5 +1,5 @@
 import React from 'react';
-import brochure from "../assets/pace2025brochure.pdf"
+import brochure from "../assets/brochure.pdf"
 
 const Footer = () => {
   return (
@@ -18,8 +18,8 @@ const Footer = () => {
         </a>
   </div>
   <div className="flex flex-col space-y-2 mt-4 md:mt-0">
-    <a href="#" className="hover:text-gray-300">Register Now</a>
-    <a href="https://linktr.ee/PACE2K25" className="hover:text-gray-300">Contact Us</a>
+    <a href="https://www.crwdctrl.in/view-details/6979fc94bb929ade8f0b8ea9" target='__blank' className="hover:text-gray-300">Register Now</a>
+    <a href="https://linktr.ee/pace2026 " className="hover:text-gray-300">Contact Us</a>
   </div>
 </div>
 
