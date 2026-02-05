@@ -29,7 +29,7 @@ const Hero = () => {
   return (
     <div
       ref={heroRef}
-      className="relative bg-black  text-white h-screen flex items-center justify-center overflow-hidden"
+      className="relative bg-black  text-white min-h-screen flex items-center justify-center overflow-hidden"
     >
       <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900 to-black"></div>
 
@@ -50,7 +50,7 @@ const Hero = () => {
           />
 
           <h1
-            className={`relative text-[200px] font-bold font-[Genos] tracking-wide uppercase transition-opacity duration-1000 ${
+            className={`relative text-[126px] sm:text-[170px] md:text-[180px] lg:text-[200px] font-bold font-[Genos] tracking-wide uppercase transition-opacity duration-1000 ${
               isVisible ? "opacity-100" : "opacity-0"
             }`}
             style={{
