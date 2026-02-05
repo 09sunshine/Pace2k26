@@ -35,7 +35,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-black w-full hero7-container relative">
+    <div className="bg-black w-full  flex justify-center relative">
       <div className="container mx-auto py-5 px-4">
         {/* Desktop Navbar */}
         <nav className="flex items-center justify-between flex-col lg:flex-row">
@@ -94,15 +94,14 @@ const Navbar = () => {
 
       {/* Mobile Navbar (Imported Component) */}
       <MobileNavbar isMobileOpen={isMobileOpen} setIsMobileOpen={setIsMobileOpen} />
-      <style jsx>{`
-        /* Phone View (Below 500px) */
+      <style >{`
+        
         @media (max-width: 500px) {
           .hero7-container {
             width: 150%;
             height: 200%;
           }
-        }
-      `}</style>
+        }`}</style>
     </div>
   );
 };

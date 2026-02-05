@@ -63,7 +63,7 @@ export default function AboutUs() {
         `}
       </style>
 
-      <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
         {/* IMAGE SLIDER */}
         <div className="relative w-full h-[360px] rounded-2xl overflow-hidden shadow-2xl bg-neutral-900">

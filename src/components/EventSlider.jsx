@@ -129,7 +129,7 @@ const events = [
 
 function EventSlider() {
   return (
-    <div className="min-h-screen bg-black p-8 hero8-container flex flex-col items-center">
+    <div className="min-h-screen bg-black p-8  flex flex-col items-center">
       <h1 className="items-center text-5xl font-[Genos] font-bold text-white mb-8">
         MAJOR EVENTS
       </h1>

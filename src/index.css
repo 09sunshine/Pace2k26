@@ -257,3 +257,7 @@ body {
 .error {
   @apply text-red-400 text-sm mt-1;
 }
+
+html, body {
+  overflow-x: hidden;
+}

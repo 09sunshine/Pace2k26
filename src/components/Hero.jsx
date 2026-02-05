@@ -29,7 +29,7 @@ const Hero = () => {
   return (
     <div
       ref={heroRef}
-      className="relative bg-black hero-container text-white h-screen flex items-center justify-center overflow-hidden"
+      className="relative bg-black  text-white h-screen flex items-center justify-center overflow-hidden"
     >
       <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900 to-black"></div>
 
