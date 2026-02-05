@@ -30,7 +30,7 @@ const events = [
     title: "VOLLEYBALL",
     image: volley,
     categories: ["ENTRY FEE", "", "MEN", "WOMEN"],
-    prices: ["", "", "", "", "₹2500/-", "₹1500/-"],
+    prices: ["", "", "₹2500/-", "₹1500/-"],
     rulebook: volleyballRulebook,
     bgGradient:
       "radial-gradient(circle at 75% 80%, rgba(255, 99, 71, 0.9) 0%, rgba(0, 0, 0, 0.85) 50%, #000000 100%)",
@@ -40,7 +40,7 @@ const events = [
     title: "KABADDI",
     image: kabaddi,
     categories: ["ENTRY FEE", "MEN"],
-    prices: ["", "", "₹2500/-"],
+    prices: ["", "₹2500/-"],
     rulebook: kabaddiRulebook,
     bgGradient:
       "radial-gradient(circle at 75% 80%, rgba(10, 79, 80, 0.9) 0%, rgba(0, 0, 0, 0.85) 50%, #000000 100%)",
@@ -50,7 +50,7 @@ const events = [
     title: "FOOTBALL",
     image: football,
     categories: ["ENTRY FEE", "", "MEN-6", "MEN-11", "WOMEN"],
-    prices: ["", "", "", "", "", "₹2000/-", "₹3500/-", "₹1500/-"],
+    prices: ["", "", "₹2000/-", "₹3500/-", "₹1500/-"],
     rulebook: footballRulebook,
     bgGradient:
       "radial-gradient(circle at 75% 80%, rgba(0, 191, 255, 0.9) 0%, rgba(0, 0, 0, 0.85) 50%, #000000 100%)",
@@ -60,7 +60,7 @@ const events = [
     title: "BASKETBALL",
     image: basketball,
     categories: ["ENTRY FEE", "", "MEN", "WOMEN"],
-    prices: ["", "", "", "", "₹2500/-", "₹1500/-"],
+    prices: ["", "", "₹2500/-", "₹1500/-"],
     rulebook: basketballRulebook,
     bgGradient:
       "radial-gradient(circle at 75% 80%, rgba(255, 165, 0, 0.9) 0%, rgba(0, 0, 0, 0.85) 50%, #000000 100%)",
@@ -70,7 +70,7 @@ const events = [
     title: "CRICKET",
     image: cricket,
     categories: ["ENTRY FEE", "", "MEN", "WOMEN"],
-    prices: ["", "", "", "", "₹4500/-", "₹999/-"],
+    prices: ["", "", "₹4500/-", "₹999/-"],
     rulebook: cricketRulebook,
     bgGradient:
       "radial-gradient(circle at 75% 80%, rgba(10, 79, 80, 0.9) 0%, rgba(0, 0, 0, 0.85) 50%, #000000 100%)",
@@ -80,7 +80,7 @@ const events = [
     title: "SQUASH",
     image: squash,
     categories: ["ENTRY FEE", "", "MEN-S", "WOMEN-S", "MEN-D"],
-    prices: ["", "", "", "", "₹300/-", "₹300/-", "₹600/-"],
+    prices: ["", "", "₹300/-", "₹300/-", "₹600/-"],
     rulebook: squashRulebook,
     bgGradient:
       "radial-gradient(circle at 75% 80%, rgba(255, 165, 0, 0.9) 0%, rgba(0, 0, 0, 0.85) 50%, #000000 100%)",
@@ -90,7 +90,7 @@ const events = [
     title: "LAWN TENNIS",
     image: lawnTennis,
     categories: ["ENTRY FEE", "", "MEN", "WOMEN"],
-    prices: ["", "", "", "₹400/-", "₹200/-"],
+    prices: ["", "", "₹400/-", "₹200/-"],
     rulebook: lawnTennisRulebook,
     bgGradient:
       "radial-gradient(circle at 75% 80%, rgba(255, 165, 0, 0.9) 0%, rgba(0, 0, 0, 0.85) 50%, #000000 100%)",
@@ -100,7 +100,7 @@ const events = [
     title: "TABLE TENNIS",
     image: tableTennis,
     categories: ["MEN", "WOMEN","MEN-T","WOMEN-T"],
-    prices: ["₹300/-","₹200/-","800","500"],
+    prices: ["₹300/-","₹200/-","₹800/-","₹500/-"],
     rulebook:tableTennisRulebook,
     bgGradient:
       "radial-gradient(circle at 75% 80%, rgba(0, 191, 255, 0.9) 0%, rgba(0, 0, 0, 0.85) 50%, #000000 100%)",
@@ -110,7 +110,7 @@ const events = [
     title: "BADMINTON",
     image: badminton,
     categories: ["MEN", "WOMEN", "MIXED","MEN-T","WOMEN-T",],
-    prices: ["₹300/-", "₹200/-", "₹500/-","1000","700"],
+    prices: ["₹300/-", "₹200/-", "₹500/-","₹1000/-","₹700/-"],
     rulebook: badmintonRulebook,
     bgGradient:
       "radial-gradient(circle at 75% 80%, rgba(10, 79, 80, 0.9) 0%, rgba(0, 0, 0, 0.85) 50%, #000000 100%)",
@@ -120,7 +120,7 @@ const events = [
     title: "CHESS",
     image: chess,
     categories: ["ENTRY FEE", "", "MEN-T", "WOMEN-I"],
-    prices: ["", "", "", "₹500/-", "₹100/-"],
+    prices: ["", "", "₹500/-", "₹100/-"],
     rulebook: chessRulebook,
     bgGradient:
       "radial-gradient(circle at 75% 80%, rgba(255, 99, 71, 0.9) 0%, rgba(0, 0, 0, 0.85) 50%, #000000 100%)",
@@ -181,18 +181,29 @@ function EventSlider() {
                 />
 
                 {/* Event Details */}
-                <div className="w-full space-y-4 mb-auto">
-                  <div className="flex justify-between items-center font-[Genos] font-bold text-white text-xl">
-                    {event.categories.map((category, index) => (
-                      <span key={index}>{category}</span>
-                    ))}
-                  </div>
-                  <div className="flex justify-between items-center font-[Genos] text-white text-xl">
-                    {event.prices.map((price, index) => (
-                      <span key={index}>{price}</span>
-                    ))}
-                  </div>
-                </div>
+                <div className="w-full mb-auto">
+  <div
+    className="grid gap-y-3 text-center font-[Genos] text-white"
+    style={{
+      gridTemplateColumns: `repeat(${Math.max(
+        event.categories.length,
+        event.prices.length
+      )}, minmax(0, 1fr))`,
+    }}
+  >
+    {event.categories.map((category, index) => (
+      <div key={index} className="flex flex-col items-center">
+        <span className="text-sm sm:text-base font-bold opacity-80">
+          {category}
+        </span>
+        <span className="text-base sm:text-lg">
+          {event.prices[index] || ""}
+        </span>
+      </div>
+    ))}
+  </div>
+</div>
+
 
                 {/* Button with #AE5201 Background */}
                 <div className="absolute bottom-5 left-0 right-0 flex justify-center">

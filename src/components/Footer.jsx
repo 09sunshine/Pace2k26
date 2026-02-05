@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div>
       <footer className="bg-black text-white font-[Genos] py-4">
-        <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+        <div className=" mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
           {/* Left - PACE */}
           <div className="text-4xl font-bold mb-4 md:mb-0 md:text-5xl">PACE</div>
 
